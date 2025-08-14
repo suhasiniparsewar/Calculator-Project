@@ -4,34 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Calculator</title>
+  <!-- Bootstrap for styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <!-- Calculator Container -->
     <div class="calculator card p-3 shadow-lg">
+      <!-- Display for input/output -->
       <input type="text" class="form-control mb-3 text-end fs-3" id="display" readonly />
+
+      <!-- Calculator buttons arranged in 4 columns per row -->
       <div class="row g-2">
+        <!-- Row 1 -->
         <button class="btn btn-danger col-3" onclick="clearDisplay()">AC</button>
         <button class="btn btn-secondary col-3" onclick="backspace()">⌫</button>
         <button class="btn btn-secondary col-3" onclick="appendValue('%')">%</button>
         <button class="btn btn-warning col-3" onclick="appendValue('/')">÷</button>
 
+        <!-- Row 2 -->
         <button class="btn btn-light col-3" onclick="appendValue('7')">7</button>
         <button class="btn btn-light col-3" onclick="appendValue('8')">8</button>
         <button class="btn btn-light col-3" onclick="appendValue('9')">9</button>
         <button class="btn btn-warning col-3" onclick="appendValue('*')">×</button>
 
+        <!-- Row 3 -->
         <button class="btn btn-light col-3" onclick="appendValue('4')">4</button>
         <button class="btn btn-light col-3" onclick="appendValue('5')">5</button>
         <button class="btn btn-light col-3" onclick="appendValue('6')">6</button>
         <button class="btn btn-warning col-3" onclick="appendValue('-')">−</button>
 
+        <!-- Row 4 -->
         <button class="btn btn-light col-3" onclick="appendValue('1')">1</button>
         <button class="btn btn-light col-3" onclick="appendValue('2')">2</button>
         <button class="btn btn-light col-3" onclick="appendValue('3')">3</button>
         <button class="btn btn-warning col-3" onclick="appendValue('+')">+</button>
 
+        <!-- Row 5 -->
         <button class="btn btn-light col-3" onclick="appendValue('0')">0</button>
         <button class="btn btn-light col-3" onclick="appendValue('.')">.</button>
         <button class="btn btn-secondary col-3" onclick="square()">x²</button>
