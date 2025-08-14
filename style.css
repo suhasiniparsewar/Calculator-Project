@@ -1,16 +1,23 @@
+/* Background styling */
 body {
   background-color: #e0e0e0;
 }
+
+/* Calculator card styling */
 .calculator {
-  width: 300px;
+  width: 340px;
   border-radius: 15px;
   background-color: #ffffff;
 }
+
+/* Buttons styling */
 button {
   height: 60px;
   font-size: 1.5rem;
   border-radius: 10px;
 }
+
+/* Display styling */
 #display {
   height: 60px;
   border-radius: 10px;
